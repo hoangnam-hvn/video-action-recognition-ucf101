@@ -5,14 +5,6 @@ from keras.applications import InceptionResNetV2
 from keras.layers import Dense, TimeDistributed, GlobalAveragePooling3D, Rescaling, Input
 
 from preprocess_data import *
-
-
-def dar(x):
-    u = []
-    for i in range(10):
-        xith = x[:, i]
-        u.append(xith)
-    return u
   
 input_shape = (general_options[0], general_options[1], general_options[2], general_options[3])
 
